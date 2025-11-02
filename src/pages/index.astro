@@ -3,17 +3,44 @@ import Layout from '../layouts/Layout.astro';
 import Markdown from '../components/Markdown.astro';
 
 const explainer = `
-An Astro website can go way beyond static pages - on the right platform.
+Jo1nTrX™ - Your Ultimate Multipurpose Discord Bot.
 
-Netlify supports not only [Streaming SSR](https://docs.astro.build/en/guides/server-side-rendering/#html-streaming) and fast [Edge Middleware](https://docs.astro.build/en/guides/middleware/), but also [on-demand revalidation](https://www.netlify.com/blog/cache-tags-and-purge-api-on-netlify/) and [stale-while-revalidate](https://www.netlify.com/blog/swr-and-fine-grained-cache-control/). 
-Any page or data can be rebuilt only when needed, without site visitors ever getting a performance hit.
+A powerful Discord bot designed to enhance your server with advanced features including moderation tools, invite & message tracking, giveaways, custom welcomer, fun commands, utility features, and much more. Built to make server management effortless and engaging.
 `;
 ---
 
-<Layout title="Welcome to Astro.">
-    <h1 class="mb-10">Netlify Platform Starter for Astro</h1>
+<Layout title="Jo1nTrX™ - Multipurpose Discord Bot">
+    <h1 class="mb-10">Jo1nTrX™ Discord Bot</h1>
     <Markdown content={explainer} class="mb-10 text-lg" />
+    
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-10">
+        <div class="p-6 rounded-lg bg-black/50 border border-primary/20">
+            <h3 class="text-xl font-bold mb-2 text-primary">🛡️ Moderation</h3>
+            <p class="text-sm text-gray-300">Keep your server safe with advanced moderation tools, auto-mod, warnings, and ban management.</p>
+        </div>
+        <div class="p-6 rounded-lg bg-black/50 border border-primary/20">
+            <h3 class="text-xl font-bold mb-2 text-primary">📊 Tracking</h3>
+            <p class="text-sm text-gray-300">Track invites, messages, and member activity with detailed analytics and leaderboards.</p>
+        </div>
+        <div class="p-6 rounded-lg bg-black/50 border border-primary/20">
+            <h3 class="text-xl font-bold mb-2 text-primary">🎉 Giveaways</h3>
+            <p class="text-sm text-gray-300">Host exciting giveaways with customizable requirements and automatic winner selection.</p>
+        </div>
+        <div class="p-6 rounded-lg bg-black/50 border border-primary/20">
+            <h3 class="text-xl font-bold mb-2 text-primary">👋 Welcomer</h3>
+            <p class="text-sm text-gray-300">Greet new members with custom welcome messages, images, and role assignments.</p>
+        </div>
+        <div class="p-6 rounded-lg bg-black/50 border border-primary/20">
+            <h3 class="text-xl font-bold mb-2 text-primary">🎮 Fun Commands</h3>
+            <p class="text-sm text-gray-300">Engage your community with games, memes, and entertaining interactive commands.</p>
+        </div>
+        <div class="p-6 rounded-lg bg-black/50 border border-primary/20">
+            <h3 class="text-xl font-bold mb-2 text-primary">⚙️ Utility</h3>
+            <p class="text-sm text-gray-300">Essential tools including server info, user lookup, reminders, and much more.</p>
+        </div>
+    </div>
+    
     <p>
-        <a href="https://docs.netlify.com/frameworks/astro/" class="btn btn-lg sm:min-w-64">Read the Docs</a>
+        <a href="#invite" class="btn btn-lg sm:min-w-64">Add to Discord</a>
     </p>
 </Layout>
