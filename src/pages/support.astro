@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Markdown from '../components/Markdown.astro';
+
+const supportContent = `
+## Support
+
+Welcome to the Jo1nTrX Support page. We're here to help!
+
+### Getting Help
+
+If you need assistance with Jo1nTrX, you have several options:
+
+#### Documentation
+
+Check out our comprehensive documentation to find answers to common questions:
+
+- [Netlify Documentation](https://docs.netlify.com)
+- [Astro Documentation](https://docs.astro.build)
+- Platform feature guides and tutorials
+
+#### Contact Support
+
+For direct assistance, you can reach our support team:
+
+- **Email**: support@jo1ntrx.com
+- **Response Time**: We typically respond within 24-48 hours
+
+### Frequently Asked Questions
+
+**Q: How do I get started with Jo1nTrX?**  
+A: Visit our home page for an overview of our platform and features. Our documentation provides step-by-step guides for getting started.
+
+**Q: What technologies does Jo1nTrX use?**  
+A: We use Astro for our frontend framework, deployed on Netlify with Edge Functions, Image CDN, and Netlify Blobs for optimal performance.
+
+**Q: How do I add Jo1nTrX to my Discord server?**  
+A: Visit our website or contact us for an invite link to add Jo1nTrX™ to your Discord server.
+
+**Q: What about my privacy and data?**  
+A: We take your privacy seriously. Please review our [Privacy Policy](/privacy-policy) for detailed information about how we collect, use, and protect your data.
+
+**Q: How can I report a bug or issue?**  
+A: Please email us at support@jo1ntrx.com with detailed information about the issue you're experiencing.
+
+### Technical Support
+
+For technical issues related to:
+
+- **Performance**: Edge Functions provide global distribution for optimal speed
+- **Media**: Our Image CDN automatically optimizes images
+- **Data Storage**: Netlify Blobs offer efficient data management
+- **Caching**: Advanced caching strategies with on-demand revalidation
+
+### Community
+
+Join our community to connect with other users, share tips, and get help:
+
+- Follow us on social media
+- Participate in community forums
+- Subscribe to our newsletter for updates
+
+### Feedback
+
+We value your feedback! If you have suggestions for improving Jo1nTrX, please let us know at support@jo1ntrx.com.
+`;
+---
+
+<Layout title="Support">
+    <h1 class="mb-10">Support</h1>
+    <Markdown content={supportContent} class="mb-10" />
+    <div class="flex flex-wrap gap-4">
+        <a href="mailto:support@jo1ntrx.com" class="btn btn-lg">Contact Support</a>
+        <a href="/" class="btn btn-lg">Back to Home</a>
+    </div>
+</Layout>

@@ -1,0 +1,246 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Markdown from '../components/Markdown.astro';
+
+const privacyContent = `
+## Jo1nTrX™ Discord Bot Privacy Policy
+
+**Last Updated:** ${new Date().toLocaleDateString()}
+
+---
+
+## 1. Introduction
+
+Welcome to Jo1nTrX™ ("we," "our," or "the bot"). We are committed to protecting your privacy and handling your data in an open and transparent manner. This Privacy Policy explains how Jo1nTrX™, a multipurpose Discord bot, collects, uses, stores, and protects your information when you use our services on Discord.
+
+By using Jo1nTrX™, you agree to the collection and use of information in accordance with this policy.
+
+---
+
+## 2. Information We Collect
+
+Jo1nTrX™ collects and processes the following types of information to provide its multipurpose functionality:
+
+### 2.1 Server Data
+- **Guild Information**: Server ID, server name, server settings, and configuration preferences
+- **Channel Information**: Channel IDs, names, and permissions for features like welcome messages and logging
+- **Role Information**: Role IDs, names, and permissions for moderation and management features
+
+### 2.2 User Information
+- **User Profiles**: User IDs, usernames, discriminators, and display names
+- **Avatar Data**: Profile pictures for welcome messages and user identification
+- **User Status**: Online/offline status and activities (when necessary for status-based features)
+- **Join/Leave Events**: Timestamps and related metadata for member tracking
+
+### 2.3 Message Metadata
+- **Command Usage**: Commands invoked, timestamps, and associated parameters
+- **Moderation Actions**: Warnings, kicks, bans, and other moderation events with timestamps and reasons
+- **Message Statistics**: Message counts per user (for tracking features, not content)
+
+### 2.4 Invite Tracking Data
+- **Invite Links**: Invite codes created and used within servers
+- **Invite Statistics**: Number of uses, who created invites, and who joined through them
+- **Join Tracking**: Correlation between invites and new member joins
+
+### 2.5 Custom Server Settings
+- **Configuration Data**: Custom prefixes, enabled/disabled features, welcome/goodbye messages
+- **Moderation Settings**: Auto-moderation rules, warning thresholds, and custom commands
+- **Logging Preferences**: Channel selections for various logging features
+
+---
+
+## 3. How We Use Your Information
+
+We use the collected information solely for the following purposes:
+
+### 3.1 Core Bot Functionality
+- Provide moderation tools (warnings, kicks, bans, auto-moderation)
+- Track and display invite statistics and member join sources
+- Monitor message activity for tracking and statistical features
+- Deliver fun and game features including interactive commands
+- Execute utility commands and server management functions
+- Send welcome and goodbye messages to new and departing members
+
+### 3.2 Service Improvement
+- Analyze usage patterns to improve bot performance and features
+- Identify and fix bugs or technical issues
+- Develop new features based on user needs
+
+### 3.3 Security and Safety
+- Detect and prevent abuse, spam, and malicious behavior
+- Enforce Discord's Terms of Service and Community Guidelines
+- Protect the integrity of servers using Jo1nTrX™
+
+---
+
+## 4. Data Retention
+
+We retain different types of data for varying periods:
+
+- **Active Server Data**: Stored while the bot is present in your server and for up to 30 days after removal
+- **Moderation Logs**: Retained for 180 days for audit and dispute resolution purposes
+- **Invite Statistics**: Stored for 90 days from the last server activity
+- **Message Statistics**: Aggregate data retained for 60 days; individual data deleted after 30 days
+- **Custom Settings**: Deleted immediately upon bot removal from server or upon user request
+
+Server administrators can request expedited deletion of all server data at any time.
+
+---
+
+## 5. Data Security
+
+We implement industry-standard security measures to protect your information:
+
+- **Encrypted Transmission**: All data transmitted between Discord and our servers uses TLS/SSL encryption
+- **Access Controls**: Strict internal access policies limit data access to authorized personnel only
+- **Secure Storage**: Data is stored on secure servers with regular security audits and monitoring
+- **Regular Updates**: Our systems are regularly updated to address security vulnerabilities
+- **No Third-Party Sharing**: We do not sell, trade, or transfer your data to third parties
+
+---
+
+## 6. Discord Privileged Gateway Intents
+
+To provide its full range of features, Jo1nTrX™ requires the following Discord Privileged Gateway Intents:
+
+### 6.1 Server Members Intent
+**Purpose**: Access to server member information for welcome messages, role management, and invite tracking
+
+**Justification**: This intent is essential for:
+- Sending personalized welcome messages when users join
+- Tracking which invite link was used by new members
+- Managing roles for moderation and utility features
+- Providing accurate member statistics
+
+### 6.2 Message Content Intent
+**Purpose**: Access to message content for custom commands and moderation features
+
+**Justification**: This intent enables:
+- Custom command recognition and execution
+- Auto-moderation of prohibited content
+- Content-based moderation tools for server administrators
+- Fun and interactive game commands that respond to user input
+
+### 6.3 Presence Intent
+**Purpose**: Access to user presence information for status-based features
+
+**Justification**: This intent allows:
+- Status-based automatic role assignment
+- Activity tracking for engagement features
+- Enhanced user experience through presence-aware features
+
+---
+
+## 7. User Rights and Control
+
+You have the following rights regarding your data:
+
+### 7.1 Access
+You can request a copy of the data we have collected about you or your server at any time.
+
+### 7.2 Correction
+If any information we hold is inaccurate or incomplete, you may request corrections.
+
+### 7.3 Deletion
+You can request deletion of your personal data or your server's data. We will comply within 30 days.
+
+### 7.4 Opt-Out
+Server administrators can disable specific features that collect certain types of data.
+
+### 7.5 Data Portability
+You may request your data in a commonly used, machine-readable format.
+
+---
+
+## 8. GDPR Compliance
+
+For users in the European Economic Area (EEA), Jo1nTrX™ complies with the General Data Protection Regulation (GDPR):
+
+- **Legal Basis**: We process data based on legitimate interests and, where required, explicit consent
+- **Data Protection Officer**: Contact information available upon request
+- **Right to Lodge Complaints**: You may file complaints with your local data protection authority
+- **Cross-Border Transfers**: Data transfers outside the EEA are protected by appropriate safeguards
+
+---
+
+## 9. Children's Privacy
+
+Jo1nTrX™ is designed for use on Discord, which requires users to be at least 13 years old. We do not knowingly collect information from children under 13. If we discover that we have inadvertently collected data from a child under 13, we will delete it immediately.
+
+---
+
+## 10. Data Breach Notification
+
+In the event of a data breach that compromises user information, we will:
+- Notify affected users within 72 hours of discovering the breach
+- Provide details about what information was compromised
+- Explain the steps we are taking to address the breach
+- Offer guidance on how users can protect themselves
+
+---
+
+## 11. Third-Party Services
+
+Jo1nTrX™ operates exclusively on Discord's platform. We do not integrate with or share data with third-party services except:
+- **Discord API**: All bot functionality relies on Discord's official API
+- **Hosting Services**: Our servers are hosted on secure, reputable infrastructure providers
+
+We do not use third-party analytics, advertising, or tracking services.
+
+---
+
+## 12. International Data Transfers
+
+Your data may be transferred to and processed in countries other than your own. We ensure that such transfers comply with applicable data protection laws and that appropriate safeguards are in place.
+
+---
+
+## 13. Changes to This Privacy Policy
+
+We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. When we make significant changes:
+- We will update the "Last Updated" date at the top of this policy
+- We will notify server administrators through Discord where the bot is active
+- Continued use of Jo1nTrX™ after changes constitutes acceptance of the updated policy
+
+---
+
+## 14. Contact Us
+
+If you have questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:
+
+- **Support Server**: [Join our support server for assistance]
+- **Email**: Available through our support channels
+- **Data Requests**: Use the contact methods above to submit formal data access or deletion requests
+
+---
+
+## 15. Summary for Discord Intent Applications
+
+**Bot Name**: Jo1nTrX™  
+**Bot Purpose**: Multipurpose Discord bot providing moderation, tracking, utility, games, and welcomer features
+
+**Data Collection**: Server IDs, user IDs, usernames, message metadata, invite statistics, custom settings
+
+**Privileged Intents Required**:
+1. **Server Members Intent**: For welcome messages and invite tracking
+2. **Message Content Intent**: For custom commands and auto-moderation
+3. **Presence Intent**: For status-based features
+
+**Data Retention**: 30-180 days depending on data type; deleted immediately upon request
+
+**User Rights**: Full GDPR compliance with rights to access, correction, deletion, and data portability
+
+**Security**: Industry-standard encryption, secure storage, no third-party data sharing
+
+**Compliance**: GDPR compliant, Discord ToS compliant, transparent data practices
+
+---
+
+Thank you for trusting Jo1nTrX™ with your server's data. We are committed to maintaining the highest standards of privacy and data protection.
+`;
+---
+
+<Layout title="Privacy Policy - Jo1nTrX™ Discord Bot">
+    <h1 class="mb-10">Privacy Policy</h1>
+    <Markdown content={privacyContent} class="mb-10" />
+</Layout>

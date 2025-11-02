@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Markdown from '../components/Markdown.astro';
+
+const explainer = `
+## About Jo1nTrX™
+
+Welcome to Jo1nTrX™ - a multipurpose Discord bot designed to enhance your server experience.
+
+### What is Jo1nTrX™?
+
+Jo1nTrX™ is a feature-rich Discord bot that brings powerful tools and engaging features to your server, making community management easier and more fun.
+
+### Key Features
+
+- **Moderation**: Comprehensive tools to manage and moderate your server effectively
+- **Invite & Message Tracking**: Keep track of server invites and message statistics
+- **Fun & Games**: Entertaining games and activities to keep your community engaged
+- **Currency Exchange**: Virtual economy system with user balances, transactions, and exchange records
+- **Utility**: Helpful utility commands for various server needs
+- **Welcomer**: Customizable welcome messages for new members
+- **And Many More**: Constantly evolving with new features and improvements
+
+### Game Statistics
+
+Track scores, achievements, and progress in bot games and activities to create a competitive and engaging environment for your community.
+
+### Our Mission
+
+To provide Discord communities with a powerful, all-in-one bot solution that enhances server management and member engagement.
+`;
+---
+
+<Layout title="About Jo1nTrX">
+    <h1 class="mb-10">About Jo1nTrX</h1>
+    <Markdown content={explainer} class="mb-10" />
+</Layout>
