@@ -1,8 +1,8 @@
-# Astro on Netlify Platform Starter
+# Jo1nTrX™ Discord Bot
 
-[Live Demo](https://astro-platform-starter.netlify.app/)
+The official website for Jo1nTrX™ - a multipurpose Discord bot with moderation, invite & message tracking, giveaways, welcomer, fun commands, utility features, and much more.
 
-A modern starter based on Astro.js, Tailwind, and [Netlify Core Primitives](https://docs.netlify.com/core/overview/#develop) (Edge Functions, Image CDN, Blobs).
+Built with Astro.js, Tailwind, and hosted on Netlify.
 
 ## Astro Commands
 
