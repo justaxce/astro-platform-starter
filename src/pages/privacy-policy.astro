@@ -1,0 +1,69 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Markdown from '../components/Markdown.astro';
+
+const privacyContent = `
+## Privacy Policy
+
+Last updated: ${new Date().toLocaleDateString()}
+
+### Introduction
+
+At Jo1nTrX, we take your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information.
+
+### Information We Collect
+
+We may collect the following types of information:
+
+- **Personal Information**: Name, email address, and contact details when you voluntarily provide them
+- **Usage Data**: Information about how you interact with our website
+- **Technical Data**: IP address, browser type, and device information
+
+### How We Use Your Information
+
+We use the collected information to:
+
+- Provide and improve our services
+- Communicate with you about updates and features
+- Analyze usage patterns to enhance user experience
+- Comply with legal obligations
+
+### Data Security
+
+We implement industry-standard security measures to protect your personal information from unauthorized access, disclosure, or destruction.
+
+### Third-Party Services
+
+Our website is hosted on Netlify, which may collect additional data as described in their privacy policy. We also use:
+
+- Netlify Edge Functions for enhanced performance
+- Netlify Image CDN for optimized media delivery
+- Netlify Blobs for data storage
+
+### Your Rights
+
+You have the right to:
+
+- Access your personal data
+- Request correction of inaccurate data
+- Request deletion of your data
+- Opt-out of communications
+
+### Cookies
+
+We may use cookies and similar technologies to improve your browsing experience. You can control cookie preferences through your browser settings.
+
+### Changes to This Policy
+
+We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date.
+
+### Contact Us
+
+If you have any questions about this Privacy Policy, please contact us through our support page.
+`;
+---
+
+<Layout title="Privacy Policy">
+    <h1 class="mb-10">Privacy Policy</h1>
+    <Markdown content={privacyContent} class="mb-10" />
+</Layout>

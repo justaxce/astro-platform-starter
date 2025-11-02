@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Markdown from '../components/Markdown.astro';
+
+const explainer = `
+## About Jo1nTrX
+
+Welcome to Jo1nTrX - a cutting-edge platform built on Netlify's powerful infrastructure.
+
+### Who We Are
+
+Jo1nTrX is dedicated to delivering exceptional web experiences using modern technologies like Astro, Netlify Edge Functions, and advanced caching strategies.
+
+### What We Do
+
+We leverage the full power of the Netlify platform to create fast, scalable, and reliable web applications. Our platform utilizes:
+
+- **Streaming SSR** for optimal performance
+- **Edge Functions** for global distribution
+- **Advanced caching** with on-demand revalidation
+- **Image CDN** for optimized media delivery
+- **Netlify Blobs** for efficient data storage
+
+### Our Mission
+
+To provide the best possible user experience through modern web technologies and infrastructure.
+`;
+---
+
+<Layout title="About Jo1nTrX">
+    <h1 class="mb-10">About Jo1nTrX</h1>
+    <Markdown content={explainer} class="mb-10" />
+</Layout>
